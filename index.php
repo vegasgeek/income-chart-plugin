@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Income Chart
  * Plugin URI: https://vegasgeek.com
- * Description: Messing around with chartsjs to display a chart of incomes
+ * Description: Messing around with chartsjs to display a chart of monthly incomes.
  * Author: John Hawkins
  * Version: 1.0
  * Author URI: https://vegasgeek.com
@@ -15,7 +15,7 @@ require 'cpt.php';
 require 'shortcode.php';
 
 /**
- * Enqueue charts script;
+ * Enqueue charts script.
  *
  * @return void
  */
