@@ -1,0 +1,131 @@
+{
+    "key": "group_5f9d9d186a397",
+    "title": "Income Details",
+    "fields": [
+        {
+            "key": "field_5f9d9d2e25d3b",
+            "label": "Month",
+            "name": "month",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "Jan",
+                "2": "Feb",
+                "3": "Mar",
+                "4": "Apr",
+                "5": "May",
+                "6": "Jun",
+                "7": "Jul",
+                "8": "Aug",
+                "9": "Sep",
+                "10": "Oct",
+                "11": "Nov",
+                "12": "Dec"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f9d9d9f25d3c",
+            "label": "Year",
+            "name": "year",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "2020": "2020",
+                "2019": "2019"
+            },
+            "default_value": 2020,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f9d9dc125d3d",
+            "label": "Income",
+            "name": "income",
+            "type": "number",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5f9dacd2c88c2",
+            "label": "Type",
+            "name": "type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "invoice": "Invoice",
+                "recurring": "Recurring"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "invoice",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "income"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1604197461
+}
