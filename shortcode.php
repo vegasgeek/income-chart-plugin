@@ -12,7 +12,21 @@
 function vgs_display_chart_shortcode() {
 
 	// Collect the data to display.
-	$years     = array( '2019', '2020' );
+	$args = array(
+		'post_type'      => 'income',
+		'posts_per_page' => -1,
+		'post_status'    => 'publish',
+		'order'          => 'ASC',
+		'orderby'        => 'meta_value_num',
+		'meta_key'       => 'year',
+	);
+	$posts = get_posts( $args );
+
+	foreach ( $posts as $post ) {
+		$years[] = get_field( 'year', $post->ID );
+	}
+	$years = array_unique( $years );
+
 	$cur_year  = get_the_date( 'Y' );
 	$cur_month = get_the_date( 'n' );
 	$colors    = array(
