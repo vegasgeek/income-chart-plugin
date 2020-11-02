@@ -14,6 +14,9 @@ This plugin started off as a way for me to play around with [ChartJS](https://ww
 
 On a page or post, include the shortcode `[chart]`
 
+Eventually, I plan to also create a Gutenberg block to display the chart. Eventually.
+
+
 ## Example Chart
 
 <img width="1027" alt="Screen Shot 2020-10-31 at 9 08 04 PM" src="https://user-images.githubusercontent.com/367562/97795009-3c0aa980-1bbe-11eb-882c-8cef5aff89f1.png">
